@@ -4,7 +4,7 @@
  *  @package Toolbar Publish
  * Plugin Name: Toolbar Publish
  * Description: Adds a "Publish" or "Update" button to the toolbar for easy access while working on long posts.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Dalton McGee
  * Twitter: DaltonMcGee16
  * License: MIT
@@ -41,7 +41,9 @@ add_action('admin_bar_menu', function ($wp_admin_bar) {
   return;
 });
 
-
-// This just makes sure out CSS and JS are added to the DOM.
-wp_enqueue_style('toolbar_publish_styles', plugins_url('/toolbar_publish/styles.css'));
-wp_enqueue_script('toolbar_publish_scripts', plugins_url('/toolbar_publish/scripts.js'));
+// This just makes sure out CSS and JS are added to the DOM. The hook just makes sure
+// the enqueue is called at the correct time.
+add_action( 'admin_enqueue_scripts', function(){
+  wp_enqueue_style('toolbar_publish_styles', plugins_url('/toolbar_publish/styles.css'));
+  wp_enqueue_script('toolbar_publish_scripts', plugins_url('/toolbar_publish/scripts.js'));
+} );
