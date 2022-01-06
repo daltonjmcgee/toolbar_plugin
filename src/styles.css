@@ -1,0 +1,43 @@
+/* The use of the all the !important tags—as much as I loathe them—
+is vital because of how the native WP styles cascade. I'm sure there's
+a way to enqueue the styles AFTER the WP styles, but I couldn't work it out. */
+
+li#wp-admin-bar-publish {
+  position: absolute !important;
+  margin-top: 2px;
+}
+
+li#wp-admin-bar-publish .ab-item {
+  position: relative;
+  border-radius: 3px !important;
+  height: 28px !important;
+  margin-top: 2px !important;
+  line-height: 1 !important;
+  background-color: #2271b1 !important;
+}
+
+li#wp-admin-bar-publish:hover .ab-item {
+  border-radius: 3px !important;
+  color: #f0f0f1 !important;
+  background-color: #135e96 !important;
+}
+
+li#wp-admin-bar-publish label {
+  position: relative;
+  top: -2px;
+}
+
+@media screen and (max-width: 782px) {
+  li#wp-admin-bar-publish {
+    display: list-item !important;
+  }
+
+  li#wp-admin-bar-publish .ab-item {
+    height: 42px !important;
+  }
+
+  li#wp-admin-bar-publish label {
+    padding: 0.5rem;
+    font-size: 1.25rem !important;
+  }
+}
