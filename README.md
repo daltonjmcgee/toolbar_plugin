@@ -1,6 +1,6 @@
 ## Toolbar Publish
 ### A 3KB Plugin for Wordpress
-![Version 1.0.1](https://img.shields.io/badge/version-1.0.1-blue) ![Version 1.0.1](https://img.shields.io/badge/dependencies-0-red)
+![Version 1.0.3](https://img.shields.io/badge/version-1.0.3-blue) ![Version 1.0.1](https://img.shields.io/badge/dependencies-0-red)
 ***
 If you run into any issues or have any questions, please reach out to me on twitter [@DaltonMcGee16](https://twitter.com/daltonmcgee16)
 
