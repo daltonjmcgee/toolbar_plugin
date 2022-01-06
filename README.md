@@ -13,4 +13,10 @@ If you run into any issues or have any questions, please reach out to me on twit
 - Is this plugin on the Wordpress Plugins database yet?
   - Nope, but I'm working on it.
 - How do I install this?
-  -
+  - Go to the Releases link on the right, or click [here](https://github.com/daltonjmcgee/toolbar_plugin/releases/tag/v1.0.1.
+  - Download the toolbar_publish.zip file, (or again click [here](https://github.com/daltonjmcgee/toolbar_publish/releases/download/v1.0.1/toolbar_publish.zip))
+  - Navigate to the plugins page of your Wordpress site
+  - Click "Add New"
+  - Click "Upload Plugin"
+  - Choose the Zip from wherever you saved it.
+  - Once activated, you should be good to go.
